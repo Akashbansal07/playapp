@@ -36,7 +36,7 @@ function Navbar() {
       setIsDropdownOpen(false);
       setDropdownItems([]);
       setActiveItem(null);
-    }, 1000); 
+    }, 600); 
     setCloseDropdownTimeout(timeoutId);
   };
 
