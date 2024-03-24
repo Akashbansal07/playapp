@@ -26,13 +26,13 @@ const mover = (val)=>{
         transition={{ease:[0.76,0,0.24,1], duration: .6}}
         className='window absolute w-0 md:w-[16rem] lg:w-[26rem] h-[18rem] left-1/3 overflow-hidden rounded-lg'>
                  <motion.div transition={{ease:[0.76,0,0.24,1], duration: .4}} animate={{y:-pos+`rem`}} className='w-full h-full  left-1/3 rounded-lg'>
-    <video className='object-cover aspect-[3/2.2]' src="./src/videos/Netflix.mp4" type="video/mp4"  autoPlay muted loop></video>
+    <video className='object-cover aspect-[3/2.2]' src="https://playapp-eight.vercel.app/src/videos/Netflix.mp4" type="video/mp4"  autoPlay muted loop></video>
 </motion.div>
 <motion.div transition={{ease:[0.76,0,0.24,1], duration: .4}} animate={{y:-pos+`rem`}} className='w-full h-full left-1/3 rounded-lg'>
-    <video className='object-cover aspect-[3/2.3]' src="./src/videos/Prime.mp4" type="video/mp4"  autoPlay muted loop></video>
+    <video className='object-cover aspect-[3/2.3]' src="https://playapp-eight.vercel.app/src/videos/Prime.mp4" type="video/mp4"  autoPlay muted loop></video>
 </motion.div>
 <motion.div transition={{ease:[0.76,0,0.24,1], duration: .4}} animate={{y:-pos+`rem`}} className='w-full h-full left-1/3 rounded-lg'>
-    <video src="./src/videos/disney.mp4" type="video/mp4"  autoPlay muted loop></video>
+    <video src="https://playapp-eight.vercel.app/src/videos/disney.mp4" type="video/mp4"  autoPlay muted loop></video>
 </motion.div>
 <motion.div transition={{ease:[0.76,0,0.24,1], duration: .4}} animate={{y:-pos+`rem`}} className='w-full h-full left-1/3 rounded-lg'>
     <video className='object-cover aspect-[4/2.8]' src="./src/videos/zee5.mp4" type="video/mp4" autoPlay muted loop></video>
