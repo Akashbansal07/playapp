@@ -8,6 +8,7 @@ function Navbar() {
   const [dropdownItems, setDropdownItems] = useState([]);
   const [activeItem, setActiveItem] = useState(null); 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [closeDropdownTimeout, setCloseDropdownTimeout]=useState(null);
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
@@ -21,15 +22,22 @@ function Navbar() {
   }, []);
 
   const handleMouseEnter = (items, index) => {
+    if (closeDropdownTimeout) {
+      clearTimeout(closeDropdownTimeout);
+      setCloseDropdownTimeout(null);
+    }
     setIsDropdownOpen(true);
     setDropdownItems(items);
     setActiveItem(index); 
   };
 
   const handleMouseLeave = () => {
-    setIsDropdownOpen(false);
-    setDropdownItems([]);
-    setActiveItem(null);
+    const timeoutId = setTimeout(() => {
+      setIsDropdownOpen(false);
+      setDropdownItems([]);
+      setActiveItem(null);
+    }, 1000); 
+    setCloseDropdownTimeout(timeoutId);
   };
 
   const generateItems = (category) => {
