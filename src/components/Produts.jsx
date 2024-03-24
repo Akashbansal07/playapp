@@ -25,7 +25,7 @@ const mover = (val)=>{
         animate={{y:pos+`rem`}}
         transition={{ease:[0.76,0,0.24,1], duration: .6}}
         className='window absolute w-0 md:w-[16rem] lg:w-[26rem] h-[18rem] left-1/3 overflow-hidden rounded-lg'>
-                 <motion.div transition={{ease:[0.76,0,0.24,1], duration: .4}} animate={{y:-pos+`rem`}} className='w-full h-full  left-1/3 rounded-lg'>
+                 <motion.div transition={{ease:[0.76,0,0.24,1], duration: .4}} animate={{y:-pos+`rem`}} className='w-full h-full  left-1/3 rounded-lg bg-sky-700'>
     <video className='object-cover aspect-[3/2.2]' src="https://github.com/Akashbansal07/playapp/tree/main/src/videos/Netflix.mp4" type="video/mp4"  autoPlay muted loop></video>
 </motion.div>
 <motion.div transition={{ease:[0.76,0,0.24,1], duration: .4}} animate={{y:-pos+`rem`}} className='w-full h-full left-1/3 rounded-lg'>
