@@ -32,10 +32,10 @@ const mover = (val)=>{
     <video className='object-cover aspect-[3/2.3]' src="https://github.com/Akashbansal07/playapp/blob/main/src/videos/Prime.mp4" type="video/mp4"  autoPlay muted loop></video>
 </motion.div>
 <motion.div transition={{ease:[0.76,0,0.24,1], duration: .4}} animate={{y:-pos+`rem`}} className='w-full h-full left-1/3 rounded-lg bg-sky-500'>
-    <video src="https://playapp-eight.vercel.app/src/videos/disney.mp4" type="video/mp4"  autoPlay muted loop></video>
+    <video src="./disney.mp4" type="video/mp4"  autoPlay muted loop></video>
 </motion.div>
 <motion.div transition={{ease:[0.76,0,0.24,1], duration: .4}} animate={{y:-pos+`rem`}} className='w-full h-full left-1/3 rounded-lg bg-sky-400'>
-    <video className='object-cover aspect-[4/2.8]' src="/src/videos/zee5.mp4" type="video/mp4" autoPlay muted loop></video>
+    <video className='object-cover aspect-[4/2.8]' src="./zee5.mp4" type="video/mp4" autoPlay muted loop></video>
 </motion.div>
 <motion.div transition={{ease:[0.76,0,0.24,1], duration: .4}} animate={{y:-pos+`rem`}} className='w-full h-full left-1/3 rounded-lg bg-sky-300'>
     <video className='object-cover aspect-[4/2.8]' src="/src/videos/sonyliv.mp4" type="video/mp4" autoPlay muted loop></video>
