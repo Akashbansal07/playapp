@@ -38,7 +38,7 @@ const mover = (val)=>{
     <video className='object-cover aspect-[4/2.8]' src="./zee5.mp4" type="video/mp4" autoPlay muted loop></video>
 </motion.div>
 <motion.div transition={{ease:[0.76,0,0.24,1], duration: .4}} animate={{y:-pos+`rem`}} className='w-full h-full left-1/3 rounded-lg bg-sky-300'>
-    <video className='object-cover aspect-[4/2.8]' src="/src/videos/sonyliv.mp4" type="video/mp4" autoPlay muted loop></video>
+    <video className='object-cover aspect-[4/2.8]' src="./sonyliv.mp4" type="video/mp4" autoPlay muted loop></video>
 </motion.div>
 
 
